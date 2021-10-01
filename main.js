@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
 })
 
 function obtenerDatosClima(ciudad) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric`)
 
     .then(response => response.json())
     .then(data => {
