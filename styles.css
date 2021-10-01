@@ -1,0 +1,62 @@
+*{  
+    margin: auto;
+    padding: autp;
+    box-sizing: border-box;
+}
+
+h1{
+    background-color: rgb(199, 247, 255);
+    padding: 1em;
+    text-align: center; 
+}
+
+main{
+    padding: 3em 0 ;
+    width: 80%;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(199, 247, 255);
+    padding: 3em;
+}
+
+#buscar{
+    border-radius: 1em;
+    height: 3em;
+}
+
+
+label{
+    font-size: 2em;
+}
+
+#buscarBtn{
+    padding:  2em   ;
+    color:transparent;
+    background: transparent url(images/buscar.png) no-repeat center;
+}
+
+#buscarBtn:hover{
+    background: transparent url(images/buscar-hover.png) no-repeat center;
+}
+
+#divClima{
+    width: 50%;
+    border: solid 0.1em orange;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+p{
+    font-size: 2em;
+    line-height:1.5em;
+}
+
