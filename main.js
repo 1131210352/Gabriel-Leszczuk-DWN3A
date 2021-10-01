@@ -49,6 +49,7 @@ function mostraDatos(data){
         div_global.appendChild(p7);
 
         h2.innerHTML = ` ${data.name}`;
+        h2.style.background = `url(https://openweathermap.org/img/wn/${data.weather[0].icon}.png)`
         p.innerHTML = ` <span style="color: ${data.main.temp >= 20 ? 'red' : 'blue'} ";>${data.main.temp} ºC</span>`;
         p2.innerHTML = `Temperatura max: <span style="color: ${data.main.temp_max >= 20 ? 'red' : 'blue'} ";>${data.main.temp_max} ºC</span>`;
         p3.innerHTML = `Temperatura min: <span style="color: ${data.main.temp_min >= 20 ? 'red' : 'blue'} ";>${data.main.temp_min} ºC</span>`;

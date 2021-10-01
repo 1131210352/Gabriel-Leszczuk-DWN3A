@@ -91,6 +91,11 @@ h2, #temperatura{
     font-weight: 700;
     font-style: normal;
     color: #1282A2;
+    padding-bottom: 0.5em ;
+    text-shadow: 1px  0px 0px rgb(0, 0, 0),
+    0px  1px 0px rgb(0, 0, 0),
+   -1px  0px 0px rgb(0, 0, 0),
+    0px -1px 0px rgb(0, 0, 0);
 }
 
 #temperatura{
