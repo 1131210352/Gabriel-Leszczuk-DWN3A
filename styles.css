@@ -111,6 +111,43 @@ li{
     list-style: none;
 }
 
+@media screen and (min-width: 577px) and (max-width: 991px){
+
+    h2, #temperatura{
+            font-size: 2em;
+        }
+        label{
+            font-size: 1em;
+        }
+    
+        #divClima{
+            width: 94%;
+        }
+    
+        #buscar{
+            width: 50%;
+        }
+        
+        label{
+        margin-left: 3%;
+        padding: 2em 0 ;
+    }
+    
+        input[type="text" i] {
+            padding: 1px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1em;
+        }
+    
+        #buscarBtn{
+            background: transparent url(images/buscar-mobile.png) no-repeat center center;
+        }
+    
+        #buscarBtn:hover{
+            background: transparent url(images/buscar-hover-mobile.png) no-repeat center;
+        }
+}
+
 @media screen and (max-width: 577px) {
     label{
         font-size: 1em;
@@ -141,5 +178,9 @@ li{
 
     #buscarBtn:hover{
         background: transparent url(images/buscar-hover-mobile.png) no-repeat center;
+    }
+
+    h2, #temperatura{
+        font-size: 1.5em;
     }
 }
