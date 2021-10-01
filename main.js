@@ -31,6 +31,7 @@ function mostraDatos(data){
 
         let h2 = d.createElement('h2');
         let p = d.createElement('p');
+        p.id = 'temperatura';
         let p2 = d.createElement('p');
         let p3 = d.createElement('p');
         let p4 = d.createElement('p');
@@ -48,10 +49,10 @@ function mostraDatos(data){
         div_global.appendChild(p7);
 
         h2.innerHTML = ` ${data.name}`;
-        p.innerHTML = `Temperatura: <span style="color: ${data.main.temp >= 20 ? 'red' : 'blue'} ";>${data.main.temp} ºC</span>`;
+        p.innerHTML = ` <span style="color: ${data.main.temp >= 20 ? 'red' : 'blue'} ";>${data.main.temp} ºC</span>`;
         p2.innerHTML = `Temperatura max: <span style="color: ${data.main.temp_max >= 20 ? 'red' : 'blue'} ";>${data.main.temp_max} ºC</span>`;
         p3.innerHTML = `Temperatura min: <span style="color: ${data.main.temp_min >= 20 ? 'red' : 'blue'} ";>${data.main.temp_min} ºC</span>`;
-        p4.innerHTML = `Sensación termica:<span style="color: ${data.main.feels_like >= 20 ? 'red' : 'blue'} ";> ${data.main.feels_like} ºC </span>`;
+        p4.innerHTML = `Sensación termica:<span style="color: ${data.main.feels_like >= 20 ? 'red' : 'blue'} ";> ${data.main.feels_like} ºC `;
         p5.innerHTML = `Humedad: ${data.main.humidity} %`;
         p6.innerHTML = `Viento: ${data.wind.speed} Km/H`;
         p7.innerHTML = `Presión: ${data.main.pressure} Pa`;
@@ -64,4 +65,14 @@ function guardarUltBusqueda(data){
     localStorage.setItem( 'climaRecibido', JSON.stringify(data))
 }
 
+
+
+(function(d) {
+    var config = {
+      kitId: 'zsn7qcp',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
 
